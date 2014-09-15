@@ -12,7 +12,11 @@
       return $http.post('/login', user);
     }
 
-    return {register:register, login:login};
+    function logout(user){
+      return $http.post('/logout', user);
+    }
+
+    return {register:register, login:login, logout:logout};
   }]);
 })();
 
