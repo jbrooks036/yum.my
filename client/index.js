@@ -9,6 +9,7 @@
     .when('/login', {templateUrl:'/views/login/login.html', controller:'LoginCtrl'})
     .when('/logout', {templateUrl:'/views/logout/logout.html', controller:'LogoutCtrl'})
     .when('/bookmarks', {templateUrl:'/views/bookmarks/bookmarks.html', controller:'BookmarksCtrl'})
+    .when('/categories', {templateUrl:'/views/categories/categories.html', controller:'CategoriesCtrl'})
     .otherwise({redirectTo:'/'});
 
     $httpProvider.interceptors.push('HttpInterceptor');  // interceptor is now part of module
